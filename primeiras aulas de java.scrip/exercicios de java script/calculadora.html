@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+</head>
+<body>
+    <input type="number" name="bnt1" id="bnt1">
+    <input type="number" name="bnt2" id="bnt2">
+     <input type="button" value="somar" onclick="calcular()">
+    <div id="res"> resultado </div>
+    
+
+    <Script>
+        function calcular(){
+            var n1 = document.getElementById('bnt1')
+            var n2 = document.getElementById('bnt2')
+            var res = document.getElementById('res')
+            var b1 = Number(n1.value)
+            var b2 = Number(n2.value)
+            var s = b1 + b2
+            res.innerText=`A soma entre o numero ${b1} e ${b2}, o resultado é esse aqui -> ${s}`
+        }
+        
+
+
+    </Script>
+
+</body>
+</html>
